@@ -1,0 +1,258 @@
+.flex-container-descripcion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    background: purple;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.flex-item-descripcion{
+    background: yellow;
+    height: 400px;
+}
+
+.flex-container-raiting{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: darkblue;
+}   
+
+.flex-item-raiting{
+    flex: 1;
+    background: cyan;
+    margin: 5px;
+    height: 400px;
+}
+
+.flex-item-raiting:nth-child(2){
+    flex: 2;
+    height: 600px;
+}
+
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.flex-item{
+    flex: 1;
+    background: red;
+    margin: 3px;
+    height: auto;
+
+}
+
+
+.carrusel-productos{
+    background: red;
+    height: 200px;
+}
+
+
+
+
+.flex-container-informacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px;
+
+}
+
+
+.flex-item-informacion{
+    width: 100%;
+    background: chartreuse;
+    margin: 1px;
+    height: 50px;
+}
+
+.flex-container-image{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+
+.flex-item-image{
+    
+    background: green;
+    margin-top: 10px;
+
+}
+
+.flex-item-image:first-child{
+    height: 400px;
+    background: pink;
+}
+
+.flex-item-image:nth-child(2){
+    background: blue;
+    height: 100px;
+}
+
+.flex-container-mini-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item-mini-images{
+    flex: 1;
+    background: blueviolet;
+    margin: 1px;
+    height: 100px;
+}
+
+/*=======================OPCION 2 PROUDCTO INDIVIDUAL=================================================*/
+
+
+.flex-container-productoIndividual{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.flex-item-productoIndividual{
+    flex: 4;
+    background-color: darkcyan;
+    padding: 20px;
+}
+
+.flex-item-productoIndividual:first-child{
+    flex: 1;
+    background: darkgoldenrod;
+    padding: 50px;
+}
+
+.flex-container-mini-image{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: darksalmon;
+    height: auto
+}
+
+
+.flex-item-mini-image{
+    height: 100px;
+    width: 100%;
+    background: darkorchid;
+    margin-bottom: 1px;
+}
+
+
+.big-image{
+    background: dodgerblue;
+    height: 400px;
+    padding: 20px;
+}
+
+.flex-container-informacionI{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background: red;
+    height: auto;
+}
+
+
+.flex-item-informacionI{
+    background: goldenrod;
+    height: auto;
+
+}
+
+.carrusel-imagenes{
+    background: red;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-container-comentariosyraiting{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: purple;
+}
+
+.flex-item-comentariosyraiting{
+    flex: 1;
+    height: 500px;
+    margin: 1px;
+    background: rosybrown;
+}
+
+@media screen and (max-width: 640px) and (min-width: 568px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .flex-container-image{
+        background: red;
+        flex-direction: row;
+    }
+
+    .flex-item-image:first-child{
+        flex: 2;
+        height: 300px;
+    }
+
+    .flex-item-image:nth-child(2){
+        flex: 1;
+    }
+
+    .flex-container-mini-images{
+        flex-direction: column;
+        background: black;
+        height: auto;
+        padding: 10px;
+    }
+
+    .flex-item-mini-images{
+        background: green;
+        width: 50%;
+        
+    }
+
+    .flex-container-raiting{
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .flex-item-raiting{
+        height: 200px;
+    }
+    
+}
+
+@media only screen and (max-width: 390px) and (min-width:321px){
+
+    .flex-item-image:first-child{
+        height: 200px;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .flex-container-raiting{
+        flex-direction: column;
+    }
+
+}

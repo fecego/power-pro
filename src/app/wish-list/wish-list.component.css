@@ -1,0 +1,126 @@
+.couldInterest{
+    background: red;
+    height: 170px;
+}
+
+.flex-container2-notwish{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: purple;
+}
+
+
+.flex-item2-notwish{    
+    align-self: flex-start;;
+    flex: 3;
+    background: red;
+    margin: 2px;
+
+}
+
+.flex-item2-notwish:first-child{
+    flex: 1;
+    height: 150px;
+}
+
+
+.flex-container-notWish{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.flex-item-not-wish{
+
+}
+
+.flex-container-wish{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 30px;
+}
+
+
+.flex-item-wish{
+    width: 18%;
+    height: 250px;
+    background: red;
+    margin: 1px;
+}
+
+
+
+
+@media screen and (max-width: 640px) and (min-width: 568px){
+    .flex-container-wish{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px;
+    }
+    
+    
+    .flex-item-wish{
+        width: 26%;
+        height: 250px;
+        background: green;
+        margin: 1px;
+    }
+
+
+    .flex-container2-notwish{
+        background: yellow;
+    }
+
+
+    .flex-item2-notwish{
+        
+        background: pink;
+    }
+
+    .flex-item2-notwish:first-child{
+        flex: 1;
+    }
+
+   
+}
+
+@media only screen and (max-width: 390px) and (min-width:321px){
+    .flex-container-wish{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px;
+    }
+    
+    
+    .flex-item-wish{
+        width: 100%;
+        height: 250px;
+        background: green;
+        margin: 1px;
+    }
+
+    .flex-container2-notwish{
+        margin: 0;
+    }
+
+    .flex-item2-notwish{
+        flex: 1;
+    }
+
+    .flex-item2-notwish:first-child{
+        height: 120px;
+
+    }
+
+
+}

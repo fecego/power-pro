@@ -1,0 +1,27 @@
+.section-contact{
+    height: 500px;
+}
+
+.formulario-contacto{
+    background: orchid;
+    padding: 20px;
+}
+
+.image-contacto{
+    background: red;
+}
+
+@media screen and (max-width: 640px) and (min-width: 568px){
+    .section-contact{
+        height: 450px;
+    }
+}
+
+
+@media only screen and (max-width: 390px) and (min-width:321px){
+    .section-contact{
+        height: auto;
+    }
+
+    
+}

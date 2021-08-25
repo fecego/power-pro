@@ -1,0 +1,22 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: red;
+    
+}
+
+.flex-item{
+    flex: 2;
+    height: auto;
+    background: orange;
+    padding: 20px;
+    margin: 1px;
+}
+
+.flex-item:first-child{
+    flex: 1;
+    height: auto;
+    background: slateblue;
+    padding: 20px;
+}

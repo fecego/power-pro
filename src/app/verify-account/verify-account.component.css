@@ -1,0 +1,34 @@
+
+.flex-container-verificacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.flex-item-verificacion{
+   text-align: center;
+}
+
+
+@media only screen and (max-width: 390px) and (min-width:321px){
+    .flex-container-verificacion{
+        height: 250px;
+        background: pink;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-item-verificacion{
+        height: 250px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) and (min-width: 568px){
+    .flex-container-verificacion{
+        height: 250px;
+    }
+}

@@ -1,0 +1,328 @@
+@media (hover: hover) and (pointer: fine) {
+    .flex-item:hover{
+        transform: scale(1.2);
+        box-shadow: 1px 6px 15px 0px rgba(0,0,0,0.91);
+        -webkit-box-shadow: 1px 6px 15px 0px rgba(0,0,0,0.91);
+        -moz-box-shadow: 1px 6px 15px 0px rgba(0,0,0,0.91);
+    }
+    
+    .flex-item:hover h1{
+        font-size: 30px;
+        line-height: 300px;
+    }
+
+    .flex-item2:hover{
+        flex-grow: 6;
+        transform: scale(1.2);
+        box-shadow: 1px 6px 15px 0px rgba(0,0,0,0.91);
+        -webkit-box-shadow: 1px 6px 15px 0px rgba(0,0,0,0.91);
+        -moz-box-shadow: 1px 6px 15px 0px rgba(0,0,0,0.91);
+    }
+    
+    .flex-item2:hover h2{
+        line-height: 350px;
+        font-size: 25px;
+    }
+
+  }
+
+  .publicity-fifth{
+    background: crimson; 
+    width: 100%; 
+    height: 400px;
+  }
+
+
+.publicity-four{
+    background: cyan; 
+    width: 100%; 
+    height: 350px;
+    padding: 20px;
+    
+}
+
+.second-publicity{
+    background: chocolate;
+    height: 500px;
+    padding: 0;
+    margin: 1px;
+}
+
+.first-element{
+    width: 100%;
+    height: 450px;
+    background: red;
+}
+
+.first-element-div{
+    
+}
+
+
+
+
+.first-publicity{
+    height: 600px;
+    background: orange;
+    padding: 20px;
+    
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+.flex-item{
+    flex: 1;
+    text-align: center;
+    background: orange;
+    margin: 1px;
+    height: 450px;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.flex-item h1{
+    font-size: 30px;
+    line-height: 100px;
+    transition: 0.5s;
+}
+
+
+
+.flex-container-especialidad{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+
+.flex-item2{
+    flex: 2;
+    color: #fff;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    margin: 1px;
+    height: 500px;
+    transition: 0.7s;
+}
+
+.flex-item2 h2{
+    font-size: 12px;
+    align-items: center;
+    line-height: 105px;
+    transition: 0.7s;
+}
+
+
+
+
+@media only screen and (max-width: 390px) and (min-width:321px){
+    .publicity-fifth{
+        height: 250px;
+    }
+   
+    .first-element{
+        height: 250px;
+    }
+
+    .publicity-four{
+        height: 250px;
+    }
+
+    .flex-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .first-publicity{
+        height: 250px;
+        background: orange;
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+        margin-top: 1px;
+        
+    }
+
+    .cont-first-publish{
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-item{
+       flex: none;
+       height: 200px;
+       line-height: 300px;
+    }
+
+    .flex-item:hover{
+        transform: none;
+        box-shadow: none;
+    }
+
+    .flex-item:hover h1{
+        line-height: 100px;
+    }
+
+    .flex-item2{
+        flex: none;
+        height: 100px;
+    }
+
+    .flex-item2:hover{
+        transform: none;
+    }
+
+    .flex-item:hover{
+        transform: none;
+    }
+
+    .flex-container-especialidad{
+        flex-direction: column;
+    }
+
+    .flex-item2{
+        flex: none;
+        height: 200px;
+    }
+
+    .flex-item2:hover{
+        transform: none;
+        box-shadow: none;
+
+    }
+
+    .flex-item2:hover h2{
+        font-size: 12px;
+        line-height: 105px;
+    }
+
+    .second-publicity{
+        height: 250px;
+    }
+
+
+}
+
+@media only screen and (max-width: 768) and (min-width:641px){  
+    .flex-container{
+        flex-direction: column;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 320px){
+    .flex-container{
+        flex-direction: column;
+
+    }
+    .flex-item{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 568px) and (min-width:502px){
+    .flex-container{
+        flex-direction: column;
+
+    }
+    .flex-item{
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 640px) and (min-width: 568px){
+    #first-publicity{
+        display: none;
+    }
+
+    .first-element{
+        height: 250px;
+    }
+
+    .first-publicity{
+        height: 200px;
+    }
+
+    .publicity-four{
+        display: none;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    
+    .flex-item{
+        flex: none;
+        background: purple;
+        height: 200px;
+        width: 170px;
+        margin: 12px;
+        
+
+    }
+
+    .flex-item:hover{
+        transform: none;
+        box-shadow: none;
+    }
+
+    .flex-item:hover h1{
+        line-height: 100px;
+        font-size: 12px;
+    }
+
+    
+    .flex-item h1{
+        font-size: 12px;
+    }
+
+    .flex-container-especialidad{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex-item2{
+        flex:none;
+        width:170px;
+        height: 200px;
+        margin: 10px;
+        
+
+    }
+
+    .flex-item2:hover{
+        transform: none;
+        box-shadow: none;
+        flex-grow: 0;
+        line-height: 105px;
+        
+    }
+
+    .flex-item2:hover h2{
+        font-size: 12px;
+    }
+
+    .second-publicity{
+        height: 250px;
+    }
+
+    .publicity-fifth{
+        height: 250px;
+    }
+   
+}

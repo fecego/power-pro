@@ -1,0 +1,413 @@
+.publish-image{
+    background: green; 
+    height: 300px;
+}
+
+
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-item1{
+    background: red;
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.flex-item2{
+    width: 100%;
+    height: 200px;
+    background: orange;
+}
+
+
+.flex-item2 div{
+    display: inline;
+    background: purple;
+    
+    
+}
+
+.flex-container-inside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: green;
+   
+}
+
+.flex-insider{
+    flex: 1;
+    background: purple;
+    height: 200px;
+    margin: 2px;
+}
+
+
+.flex-insider h1{
+    font-size: 14px;
+}
+
+.carrusel-categorias{
+    background: red;
+    height: 150px;
+}
+
+.flex-container-subs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: blueviolet;
+    height: 270px;
+    padding: 20px;
+}
+
+.flex-item-subs{
+    flex: 1;
+    background: blue;
+    height: 200px;
+    margin: 10px;
+}
+
+
+.flex-container-equipos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.flex-item1-equipos{
+    background: red;
+    flex:1;
+}
+
+.flex-container-inside-equipos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: hotpink;
+    padding: 8px;
+}
+
+.flex-insider-equipos div{
+    
+    background: goldenrod;
+    display: inline-block;
+    width: 46%;
+    height: 150px;
+    margin: 1px;
+}
+
+.flex-container-h2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.flex-i-h2{
+    flex: 1;
+    height: 400px;
+    background: red;
+    margin: 1px;
+    flex-grow: 1;
+}
+
+
+.flex-container-first-accesorios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.flex-item-first-accesorios{
+    flex: 1;
+    height: 200px;
+    background: coral;
+    margin: 10px;
+}
+
+
+.flex-container-second-accesorios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-item-second-accesorios{
+    flex: 1;
+    height: 200px;
+    background: cyan;
+    margin: 2px;
+}
+
+.flex-container-motores{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 900px;
+}
+
+.flex-item-motores{
+    flex: 1;
+    background: red;
+    margin: 5px;
+    
+}
+
+.flex-IC-t{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 5px;
+}
+
+.flex-IC-t2{
+    flex:1;
+    background: green;
+    margin: 2px;
+}
+
+.flex-container-subItems{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.flex-items-sub{
+    flex: 1;
+    background: darkblue;
+    margin: 1px;
+}
+
+@media only screen and (max-width: 568px) and (min-width:502px){
+
+
+}
+
+@media only screen and (max-width: 390px) and (min-width:321px){
+
+
+    
+
+    .flex-container-motores{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    
+    .flex-item-motores{
+        flex: 1;
+        background: blue;
+        margin: 5px;
+        
+    }
+
+    .flex-container-equipos{
+        flex-direction: column;
+    }
+
+    .flex-item1-equipos{
+        margin-bottom: 10px;
+    }
+
+    .flex-i-h2{
+        flex: 1;
+        height: 200px;
+        background: blue;
+        margin: 1px;
+    }
+
+    .flex-item1{
+        height: auto;
+    }
+    
+    .publish-image{
+        background: yellow; 
+        height: 200px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+
+    .flex-container-inside{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #fff;
+        padding: 20px;
+    }
+    
+    .flex-insider{
+        flex: none;
+        background: red;
+        height: 110px;
+        width: 110px;
+        
+    }
+
+
+    .flex-container-subs{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: blueviolet;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .flex-item-subs{
+        flex: none;
+        width:140px;
+        background: orange;
+        height: 140px;
+        margin: 1px;
+        padding: 0px;
+    }
+    
+
+    .flex-container-h2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 400px;
+        padding: 0px;
+    }
+
+
+    .flex-i-h2{
+        width: 100%;
+        height: 140px;
+        background: red;
+        margin: 1px;
+        
+    }
+
+}
+
+@media only screen and (max-width: 768) and (min-width:641px){
+
+}
+
+@media only screen and (max-width: 320px){
+   
+
+}
+
+@media screen and (max-width: 640px) and (min-width: 568px){
+   
+
+    .flex-container-second-accesorios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .flex-item-second-accesorios{
+        flex: none;
+        width: 170px;
+        height: 200px;
+        background: red;
+        margin: px;
+    }
+
+    .flex-container-equipos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+
+    .flex-item1-equipos{
+        background: green;
+        flex:1;
+        margin-bottom: 10px;
+    }
+
+    .flex-i-h2{
+        flex: 1;
+        height: 200px;
+        background: blue;
+        margin: 1px;
+    }
+
+    .flex-container-inside{
+        height: 140px;
+    }
+
+    .flex-insider{
+        height: 140px;
+    }
+
+
+    .flex-item1{
+        height: 140px;
+    }
+
+
+    .publish-image{
+        background: green; 
+        height: 200px;
+    }
+
+
+    .flex-container-subs{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background: blueviolet;
+        height: auto;
+        padding: 20px;
+
+    }
+
+    .flex-item-subs{
+        flex: none;
+        width: 150px;
+        background: red;
+        height: 140px;
+        margin: 12x;
+        padding: 19px;
+    }
+
+
+    .flex-IC-t{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 5px;
+    }
+    
+    .flex-IC-t2{
+        flex:1;
+        background: green;
+        margin: 2px;
+    }
+
+    .flex-container-motores{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height:700px;
+    }
+    
+    .flex-item-motores{
+        flex: 1;
+        background: red;
+        margin: 5px;
+        
+    }
+
+}
