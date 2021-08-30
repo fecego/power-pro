@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public categoriaEquipos = false;
+  public categoriaHerramientas = false;
+  public categoriaMotores = false;
+  public categoriaAccesorios = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.categoriaEquipos = true;
   }
 
 }
