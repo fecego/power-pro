@@ -3,6 +3,22 @@ nav{
 }
 
 
+.flex-containerItemsBusquedaDesktop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.iBusquedaDektop{
+    width: 19%;
+}
+
+.iBusquedaDektop .cardSearchProduct{
+  background: red;
+  height: 250px;
+  margin: 1px;
+}
+
 
 .roundSearch{
     position: absolute;
@@ -30,10 +46,10 @@ nav{
     background: white;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 500px;
+   
+    height: 800px;
     width: 0%;
     transition: 0.5s ease-in-out;
 }
@@ -44,6 +60,7 @@ nav{
 }
 
 .flex-itemBusquedaDesktop{
+    
     padding: 30px;
 }
 
