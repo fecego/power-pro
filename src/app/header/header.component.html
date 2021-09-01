@@ -22,34 +22,36 @@
       </div>
     </div>
     <div class="flex-item2">
-      <input type="search" placeholder="Que estas buscando"><i class="fa fa-search" aria-hidden="true"></i>
+      
+      <div class="flex-container3">
+        <div class="flex-item3">
+          <a type="button" (mouseover) = "selectMenu('categorias')">Categorías</a>
+        </div>  
+        <div class="flex-item3">
+          <a type="button" (mouseover) = "selectMenu('especialidades')">Especialidades</a>
+        </div>
+        <div class="flex-item3">
+          <a type="button" (mouseover) = "selectMenu('ubicaciones')">Ubicaciones</a>
+        </div>
+        <div class="flex-item3">
+          <a type="button" (mouseover) = "selectMenu('otros')">Otras secciones</a>
+        </div>
+      </div>
     </div>
     <div class="flex-item2">
       <div class="icons-menu">
-        <p><i class="fa fa-user" aria-hidden="true"></i></p>
+        <p><i (click) = "openSearchArea()" class="fa fa-search" aria-hidden="true"></i></p>
+        <p>Inicia Sesión <i class="fa fa-user" aria-hidden="true"></i></p>
         <p><i class="fa fa-shopping-cart" aria-hidden="true"></i> </p>
         <p><i class="fa fa-heart" aria-hidden="true"></i></p>
-        <p><i class="fa fa-map-marker" aria-hidden="true"></i> </p>
- 
+        <p><i  class="fa fa-map-marker" aria-hidden="true"></i> </p>
+        
         
       </div>
     </div>
   </div>
 
-  <div class="flex-container3">
-    <div class="flex-item3">
-      <a type="button" (mouseover) = "selectMenu('categorias')">Categorías</a>
-    </div>  
-    <div class="flex-item3">
-      <a type="button" (mouseover) = "selectMenu('especialidades')">Especialidades</a>
-    </div>
-    <div class="flex-item3">
-      <a type="button" (mouseover) = "selectMenu('ubicaciones')">Ubicaciones</a>
-    </div>
-    <div class="flex-item3">
-      <a type="button" (mouseover) = "selectMenu('otros')">Otras secciones</a>
-    </div>
-  </div>
+  
 
 
   <!--================Categorias============Categorias==============Categorias===================Categorias=================Categorias==============================-->
@@ -749,7 +751,10 @@
 
     </div>
 
+    
+
   </div>
+  
 </div>
 </div>
 
@@ -1126,6 +1131,27 @@
 </div>
 </div>
 
+<div class="flex-containerBusquedaDesktop" #busquedaDesktop>
+  <div class="roundSearch" (click) =  "closeSearchArea()">
+    <button class="botonCerrarSearch"><i class="fa fa-times" aria-hidden="true"></i></button>
+  </div>
+  <div class="flex-itemBusquedaDesktop">
+    <div class="muestraC">
+      <div>
+        <label for="searhBusqueda">¿Que producto estas buscando?</label>
+      </div>
+      <div>
+        <input type="search"><i (click)="busquedaAvanzada()" class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </div>
+      
+  </div>
+  <div class="flex-itemBusquedaDesktop">
+    
+  </div>
+
+</div>
+
 </nav>
 
 
@@ -1138,7 +1164,7 @@
 <!--Navbar responsive-->
 <nav id="menu-movil" #menuMobile>
   <div class="closeButton" #closeButton (click) = "closeMenus()">
-    <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+    <a type="button"><i class="fa fa-times" aria-hidden="true"></i></a>
   </div>
   <div class="flex-container-mobile">
     

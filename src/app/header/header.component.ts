@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild("contenedorPrueba") contenedorP: ElementRef;
   @ViewChild("contenedorBusqueda") contedorSearch: ElementRef;
   @ViewChild("closeButton") closeB:ElementRef;
+  @ViewChild("busquedaDesktop") searchDesktop: ElementRef;
 
 
   public categoriaEquipos = false;
@@ -36,7 +37,7 @@ export class HeaderComponent implements OnInit {
   public subcatHerramientas = false;
   public subcatAccesorios = false;
   public subcatMotores = false;
-
+  public busquedaFlag = false;
 
   constructor(private renderer:Renderer2) { }
 
@@ -60,6 +61,24 @@ export class HeaderComponent implements OnInit {
         this.renderer.removeClass(this.otrosM.nativeElement, "clasePrueba");
       break;
     }
+  }
+
+  busquedaAvanzada(){
+    console.log('Supp this is the advance research')
+  }
+
+  openSearchArea(){
+    console.log('Presionaste opensearch area')
+    let searchWidth = this.searchDesktop.nativeElement.offsetWidth;
+    if(searchWidth == 0){
+      this.renderer.addClass(this.searchDesktop.nativeElement, "expandSearchD")
+    }else{
+      this.renderer.removeClass(this.searchDesktop.nativeElement, "expandSearchD")
+    }
+  }
+
+  closeSearchArea(){
+    this.renderer.removeClass(this.searchDesktop.nativeElement, "expandSearchD")
   }
 
   expandSearch(){
