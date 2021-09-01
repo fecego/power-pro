@@ -1,3 +1,11 @@
+nav{
+  
+}
+
+#menu-movil{
+    display: none;
+}
+
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -102,11 +110,13 @@
 }
 
 .categorias-info{
+    overflow: hidden;
     background: #fff;
-    height: 900px;
+    height: 0;
     width: 1220px;
     position: absolute;
     right: 2%;
+    transition: 0.5s ease-in-out;
     
 }
 
@@ -130,12 +140,12 @@
     padding: 0;
 }
 
-.flex-itemsCategorias ul li h1{
+.flex-itemsCategorias ul li a{
     font-weight: bold;
     font-size: 14px;
 }
 
-.flex-itemContentCategorias:last-child img{
+.flex-itemContentCategorias img{
     width: 300px;
     height: 300px;
     animation: traslacion 2s;
@@ -248,3 +258,247 @@
 .flex-itemContentAccesorios{
 
 }
+
+
+
+
+.clasePrueba{
+   
+    height: 800px;
+}
+
+.flex-containerOtrasOpciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.flex-itemOtrasOpciones{
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+
+}
+
+
+.flex-itemOtrasOpciones ul{
+    
+}
+
+.flex-itemOtrasOpciones ul li{
+    list-style: none;
+}
+
+.flex-itemOtrasOpciones img{
+    width: 400px;
+    height: 400px;    
+}
+
+.flex-itemOtrasOpciones ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+
+
+}
+
+
+@media screen and (max-width: 640px) and (min-width: 568px){
+    #menu-escritorio{
+        display: none;
+    }
+
+    #menu-movil{
+        display: block;
+    }
+
+
+    /*Here goes the mobile versión */
+    .flex-container-mobile{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #4B3663;
+    }
+
+
+
+    .flex-item-mobile{
+        width: 33.3%;
+        padding: 30px;
+
+    }
+
+    .flex-item-mobile:first-child{
+        padding: 0px;
+    }
+
+
+    .flex-item-mobile:nth-child(2){
+       
+        padding: 0;
+        
+    }
+
+    .flex-item-mobile:nth-child(2) div{
+        position: absolute;
+        top: 10%;
+        display: block;
+        padding: 0;
+    }
+
+
+    .flex-item-mobile img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .flex-item-mobile:nth-child(3){
+        
+    }
+
+    .flex-item-mobile:nth-child(3) div{
+        text-align: right;
+        color: #fff;
+        font-size: 20px;
+    }
+
+
+    .flex-item-mobile:nth-child(3) div button{
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+
+    .flex-container-opcionesMenu{
+        width: 0%;
+        height: auto;
+        background: #fff;
+        position: absolute;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .expandfirst{
+        width: 90%;
+    }
+
+
+
+
+    .flex-itemOpMenu{
+        padding: 20px;
+        border-bottom: 1px solid #E6E6E6;
+    }
+
+    .flex-itemOpMenu a{
+        font-size: 18px;
+        color: #000;
+        
+        text-decoration: none;
+
+
+    }
+
+    .flex-itemOpMenu:first-child button:after{
+       
+        font-size: 13px;
+        color: #000;
+        border: none;
+        float: right;
+        margin-left: 5px
+    }
+
+
+
+
+
+    .flex-itemOpMenu button{
+        float: right;
+        font-weight: bold;
+        background: none;
+        border: none;
+    }
+
+
+
+    .flex-cM{
+        overflow: hidden;
+        height: 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    .expandCm{
+        
+        height: 180px;
+    }
+
+    
+
+
+
+    .flex-iC{
+        padding: 4px;
+        width: 100%;
+        margin-left: 30px;
+        border-bottom: 1px solid #E6E6E6;
+        
+    }
+
+    .flex-iC p i{
+        margin-right: 30%;
+        color: #000;
+    }
+    
+
+    .contenedorPrueba{        
+        background: #fff;
+        width: 0px;
+        height: 0px;
+        float: right;
+        transition: 0.5s ease-in-out;
+        overflow: hidden;
+    }
+
+    .contenedorPruebaExpand{
+        height: 600px;
+        width: 560px;
+        z-index: 999;
+    }
+
+    .backButton{
+        padding: 10px;
+    }
+
+    .backButton p{
+        font-size: 18px;
+        color: #000;
+    }
+
+    .flex-containerSubs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .flex-itemsSubs{
+        border-bottom: 1px solid #E6E6E6;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+

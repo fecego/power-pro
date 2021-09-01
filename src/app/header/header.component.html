@@ -1,4 +1,4 @@
-<nav>
+<nav id="menu-escritorio" #menuDesktop>
   <div class="flex-container">
     <div class="flex-item">
         <div class="social-media1">
@@ -38,362 +38,1348 @@
 
   <div class="flex-container3">
     <div class="flex-item3">
-      <p>Categorias</p>
+      <a type="button" (mouseover) = "selectMenu('categorias')">Categorías</a>
     </div>  
     <div class="flex-item3">
-      <p>Especialidades</p>
+      <a type="button" (mouseover) = "selectMenu('especialidades')">Especialidades</a>
     </div>
     <div class="flex-item3">
-      <p>Ubicaciones</p>
+      <a type="button" (mouseover) = "selectMenu('ubicaciones')">Ubicaciones</a>
     </div>
     <div class="flex-item3">
-      <p>Otras secciones</p>
+      <a type="button" (mouseover) = "selectMenu('otros')">Otras secciones</a>
     </div>
   </div>
-</nav>
 
-<div class="categorias-info">
-    <div class="flex-containerCategorias">
-      <div class="flex-itemsCategorias">
-        <ul>
-            <li><h1>Equipos</h1></li>
-            <li><h1>Herramientas</h1></li>
-            <li><h1>Accesorios</h1></li>
-            <li><h1>Motores</h1></li>
-        </ul>
-      </div>
-      <div class="flex-itemsCategorias">
-        <div class="flex-containerContenidoCategorias" *ngIf="categoriaEquipos == true">
-          <div class="flex-itemContentCategorias">
-            <h1>bombeo</h1>
-            <ul>
-              <li><p>Bomba</p></li>
-              <li><p>Motobomba</p></li>
-              <li><p>Presurisador</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentCategorias">
-              <h1>Compresión</h1>
-              <ul>
-                <li><p>Compresor</p></li>
-              </ul>
-          </div>
-          <div class="flex-itemContentCategorias">
-            <h1>Corte</h1>
-            <ul>
-              <li><p>Cortasetos</p></li>
-              <li><p>Desbrozadora</p></li>
-              <li><p>Desmalezadora</p></li>
-              <li><p>Machete</p></li>
-              <li><p>Motosierra</p></li>
-              <li><p>Podadora</p></li>
-              <li><p>Tronzadora</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentCategorias">
-            <h1>Fumigación</h1>
-            <ul>
-              <li><p>Aspersora</p></li>
-              <li><p>Fumigador</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentCategorias">
-            <h1>Generadores de energia</h1>
-            <ul> 
-              <li>Generador</li>
-            </ul>
-          </div>
-          <div class="flex-itemContentCategorias">
-            <h1>Limpieza</h1>
-            <ul>
-              <li><p>Hidrolavadora</p></li>
-              <li><p>Aspiradora</p></li>
-              <li><p>Extractor</p></li>
-              <li><p>Sopladora</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentCategorias">
-              <h1>Medición</h1>
-              <ul>
-                <li><p>Balanza</p></li>
-                <li><p>Bascula</p></li>
-                <li><p>Laser</p></li>
-                <li><p>Probador de voltaje</p></li>
-              </ul>            
-          </div>
-          <div class="flex-itemContentCategorias">
-            <h1>Seguridad</h1>
-            <ul><li><p>Careta</p></li></ul>
-          </div>
 
-          <div class="flex-itemContentCategorias">
-            <h1>Soldar</h1>
-            <ul>
-              <li><p>Soldadora</p></li>
-              <li><p>Soldadura</p></li>
-            </ul>
+  <!--================Categorias============Categorias==============Categorias===================Categorias=================Categorias==============================-->
+<!--======================Categorias==================Categorias================Categorias=================Categorias===================================-->
 
-          </div>
-          <div class="flex-itemContentCategorias">
-            <h1>Ventilación</h1>
-            <ul>
-              <li><p>Ventilador</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentCategorias">
-            <img src="../../assets/images/equipos.jpg" alt="">
-          </div>
 
-        </div>
-        <!--AQUI EMPIEZA EL DE HERRAMIENTAS-->
-        <div class="flex-containerContenidoEquipos" *ngIf="categoriaHerramientas == true">
-          <div class="flex-itemContentEquipos">
-            <h1>Calor</h1>
-            <ul>
-              <li><p>Cautin</p></li>
-              <li><p>Pistola</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-              <h1>Combos</h1>
-              <ul>
-                <li><p>Kit Mecanico</p></li>
-                <li><p>Kit Perforación</p></li>
-                <li><p>Kit Varios</p></li>
-                <li><p>Kit Fijación</p></li>
-              </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Corte</h1>
-            <ul>
-              <li><p>Arco segueta</p></li>
-              <li><p>Azadon</p></li>
-              <li><p>Corta pernos</p></li>
-              <li><p>Cortadora</p></li>
-              <li><p>Cortatubos</p></li>
-              <li><p>Cortavidrios</p></li>
-              <li><p>Cuchilla curva</p></li>
-              <li><p>Formon</p></li>
-              <li><p>Hacha</p></li>
-              <li><p>Navaja</p></li>
-              <li><p>Cerrucho</p></li>
-              <li><p>Sierra</p></li>
-              <li><p>Tijera</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Desbaste</h1>
-            <ul>
-              <li><p>Cepillo</p></li>
-              <li><p>Esmeriladora</p></li>
-              <li><p>Guadaña</p></li>
-              <li><p>Lijadora</p></li>
-              <li><p>Lima</p></li>
-              <li><p>Rebajadora</p></li>
-              <li><p>Recortadora</p></li>
-              <li><p>Rectificador</p></li>
-              <li><p>Router</p></li>
-              <li><p>Trompo</p></li>
-              <li><p>Pulidora</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Fijación</h1>
-            <ul> 
-              <li><p>Atornillador</p></li>
-              <li><p>Desarmador</p></li>
-              <li><p>Engrapadora</p></li>
-              <li><p>Llave</p></li>
-              <li><p>Llave </p></li>
-              <li><p>Martillo</p></li>
-              <li><p>Engrapadora</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Inyección</h1>
-            <ul>
-              <li><p>Inyector</p></li>
-              
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-              <h1>Medición</h1>
-              <ul>
-                <li><p>Cinta</p></li>
-                <li><p>Escuadra</p></li>
-                <li><p>Flexometro</p></li>
-                <li><p>Multimetro</p></li>
-                <li><p>Nivel</p></li>
-                
-              </ul>            
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Perforación </h1>
-            <ul>
-              <li><p>Atornillador</p></li>
-              <li><p>Avellanador</p></li>
-              <li><p>Berbiqui</p></li>
-              <li><p>Llave impacto</p></li>
-              <li><p>Mandril</p></li>
-              <li><p>Martillo</p></li>
-              <li><p>Rotomartillo</p></li>
-              <li><p>Taladro</p></li>
-            </ul>
-          </div>
-
-          <div class="flex-itemContentEquipos">
-            <h1>Pintura</h1>
-            <ul>
-              <li><p>Brocha</p></li>
-              <li><p>Pistola</p></li>
-              <li><p>Rodillo</p></li>
-            </ul>
-
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Pinzas varias</h1>
-            <ul>
-              <li><p>Pinza corte</p></li>
-              <li><p>Pinza fijación</p></li>
-              <li><p>Pinza soldar</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <img src="../../assets/images/herramientas.jpg" alt="">
-          </div>
-
+<div id="menuCategoria" #menuCategoria class="categorias-info" (mouseleave) = "leaveelement('categoria')">
+  <div class="flex-containerCategorias">
+    <div class="flex-itemsCategorias">
+      <ul>
+          <li><a type="button" (click) = "selectCategory('equipos')">Equipos</a></li>
+          <li><a type="button" (click) = "selectCategory('herramientas')">Herramientas</a></li>
+          <li><a type="button" (click) = "selectCategory('accesorios')">Accesorios</a></li>
+          <li><a type="button" (click) = "selectCategory('motores')">Motores</a></li>
+      </ul>
+    </div>
+    <div class="flex-itemsCategorias">
+      <div class="flex-containerContenidoCategorias" *ngIf="categoriaEquipos == true">
+        
+        <div class="flex-itemContentCategorias">
+          <h1>Bombeo</h1>
+          <ul>
+            <li><p>Bomba</p></li>
+            <li><p>Motobomba</p></li>
+            <li><p>Presurisador</p></li>
+          </ul>
         </div>
         
-        <!--CATEGORIA ACCESORIOS-->
-        <div class="flex-containerContenidoAccesorios" *ngIf="categoriaAccesorios == true">
-          <div class="flex-itemContentEquipos">
-            <h1>Equipo bombeo</h1>
+        <div class="flex-itemContentCategorias">
+            <h1>Compresión</h1>
             <ul>
-              <li><p>Caja control</p></li>
-              <li><p>Control automatico</p></li>
+              <li><p>Compresor</p></li>
             </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-              <h1>Combos</h1>
-              <ul>
-                <li><p>Kit Perforación</p></li>
-                <li><p>Kit desbaste</p></li>
-                <li><p>Kit Neumatico</p></li>
-                <li><p>Kit Pintor</p></li>
-              </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Equipo neumático</h1>
+        </div>
+        <div class="flex-itemContentCategorias">
+          <h1>Corte</h1>
+          <ul>
+            <li><p>Cortasetos</p></li>
+            <li><p>Desbrozadora</p></li>
+            <li><p>Desmalezadora</p></li>
+            <li><p>Machete</p></li>
+            <li><p>Motosierra</p></li>
+            <li><p>Podadora</p></li>
+            <li><p>Tronzadora</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentCategorias">
+          <img src="../../assets/images/equipos.jpg" alt="">
+        </div>
+        <div class="flex-itemContentCategorias">
+          <h1>Fumigación</h1>
+          <ul>
+            <li><p>Aspersora</p></li>
+            <li><p>Fumigador</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentCategorias">
+          <h1>Generadores de energia</h1>
+          <ul> 
+            <li>Generador</li>
+          </ul>
+        </div>
+        <div class="flex-itemContentCategorias">
+          <h1>Limpieza</h1>
+          <ul>
+            <li><p>Hidrolavadora</p></li>
+            <li><p>Aspiradora</p></li>
+            <li><p>Extractor</p></li>
+            <li><p>Sopladora</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentCategorias">
+            <h1>Medición</h1>
             <ul>
-              <li><p>Manguera</p></li>
-              <li><p>Regulador</p></li>
-              <li><p>Soplete</p></li>
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Herramienta corte</h1>
-            <ul>
-              <li><p>Cuchilla</p></li>
-              <li><p>Disco</p></li>
-              <li><p>Sierra</p></li>
-              
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Herramienta desbaste</h1>
-            <ul> 
-              <li><p>Carda</p></li>
-              <li><p>Cepillo</p></li>
-              <li><p>Disco</p></li>
-              <li><p>Piedra</p></li>
-              <li><p>Respaldo </p></li>
-              
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Herramienta electrica</h1>
-            <ul>
-              <li><p>Batería</p></li>
-              <li><p>Broca</p></li>
-              <li><p>Broquero</p></li>
-              <li><p>Filtro separador</p></li>
+              <li><p>Balanza</p></li>
+              <li><p>Bascula</p></li>
+              <li><p>Laser</p></li>
+              <li><p>Probador de voltaje</p></li>
+            </ul>            
+        </div>
+        
+        <div class="flex-itemContentCategorias">
+          <h1>Seguridad</h1>
+          <ul><li><p>Careta</p></li></ul>
+        </div>
 
-              
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-              <h1>Herramienta fijación</h1>
-              <ul>
-                <li><p>Grapa</p></li>
-               
-                
-              </ul>            
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Herramienta perforación </h1>
-            <ul>
-              <li><p>Adaptador</p></li>
-              <li><p>Barrena</p></li>
-              <li><p>Broca</p></li>
-              <li><p>Cincel</p></li>
-              <li><p>Diablo</p></li>
-              <li><p>Portadado</p></li>
-              <li><p>Punta</p></li>
-            </ul>
-          </div>
-
-          <div class="flex-itemContentEquipos">
-            <h1>Jardinería</h1>
-            <ul>
-              <li><p>Manguera</p></li>
-              
-            </ul>
-
-          </div>
-          <div class="flex-itemContentEquipos">
-            <h1>Pintura</h1>
-            <ul>
-              <li><p>Aereosol</p></li>
-              
-            </ul>
-          </div>
-
-          <div class="flex-itemContentEquipos">
-            <h1>Resguardo y acomodo</h1>
-            <ul>
-              <li><p>Caja herramienta</p></li>
-              <li><p>Maleta</p></li>
-              <li><p>Mochila</p></li>
-              <li><p>PortaHerramienta</p></li>
-              
-            </ul>
-          </div>
-          <div class="flex-itemContentEquipos">
-            <img src="../../assets/images/accesorios.jpg" alt="">
-          </div>
+        <div class="flex-itemContentCategorias">
+          <h1>Soldar</h1>
+          <ul>
+            <li><p>Soldadora</p></li>
+            <li><p>Soldadura</p></li>
+          </ul>
 
         </div>
-        <div class="flex-containerContenidoEquipos" *ngIf="categoriaMotores == true">
-          <div class="flex-itemContentEquipos">
-            <h1>Motores</h1>
-          
+        <div class="flex-itemContentCategorias">
+          <h1>Ventilación</h1>
+          <ul>
+            <li><p>Ventilador</p></li>
+          </ul>
+        </div>
+       
 
-          </div>
+      </div>
+      <!--AQUI EMPIEZA EL DE HERRAMIENTAS-->
+      <div class="flex-containerContenidoEquipos" *ngIf="categoriaHerramientas == true">
+        <div class="flex-itemContentEquipos">
+          <h1>Calor</h1>
+          <ul>
+            <li><p>Cautin</p></li>
+            <li><p>Pistola</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+            <h1>Combos</h1>
+            <ul>
+              <li><p>Kit Mecanico</p></li>
+              <li><p>Kit Perforación</p></li>
+              <li><p>Kit Varios</p></li>
+              <li><p>Kit Fijación</p></li>
+            </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Corte</h1>
+          <ul>
+            <li><p>Arco segueta</p></li>
+            <li><p>Azadon</p></li>
+            <li><p>Corta pernos</p></li>
+            <li><p>Cortadora</p></li>
+            <li><p>Cortatubos</p></li>
+            <li><p>Cortavidrios</p></li>
+            <li><p>Cuchilla curva</p></li>
+            <li><p>Formon</p></li>
+            <li><p>Hacha</p></li>
+            <li><p>Navaja</p></li>
+            <li><p>Cerrucho</p></li>
+            <li><p>Sierra</p></li>
+            <li><p>Tijera</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Desbaste</h1>
+          <ul>
+            <li><p>Cepillo</p></li>
+            <li><p>Esmeriladora</p></li>
+            <li><p>Guadaña</p></li>
+            <li><p>Lijadora</p></li>
+            <li><p>Lima</p></li>
+            <li><p>Rebajadora</p></li>
+            <li><p>Recortadora</p></li>
+            <li><p>Rectificador</p></li>
+            <li><p>Router</p></li>
+            <li><p>Trompo</p></li>
+            <li><p>Pulidora</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Fijación</h1>
+          <ul> 
+            <li><p>Atornillador</p></li>
+            <li><p>Desarmador</p></li>
+            <li><p>Engrapadora</p></li>
+            <li><p>Llave</p></li>
+            <li><p>Llave </p></li>
+            <li><p>Martillo</p></li>
+            <li><p>Engrapadora</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Inyección</h1>
+          <ul>
+            <li><p>Inyector</p></li>
+            
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+            <h1>Medición</h1>
+            <ul>
+              <li><p>Cinta</p></li>
+              <li><p>Escuadra</p></li>
+              <li><p>Flexometro</p></li>
+              <li><p>Multimetro</p></li>
+              <li><p>Nivel</p></li>
+              
+            </ul>            
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Perforación </h1>
+          <ul>
+            <li><p>Atornillador</p></li>
+            <li><p>Avellanador</p></li>
+            <li><p>Berbiqui</p></li>
+            <li><p>Llave impacto</p></li>
+            <li><p>Mandril</p></li>
+            <li><p>Martillo</p></li>
+            <li><p>Rotomartillo</p></li>
+            <li><p>Taladro</p></li>
+          </ul>
+        </div>
 
-          <div class="flex-itemContentEquipos">
-            <img src="../../assets/images/motores.jpg" alt="">
-          
+        <div class="flex-itemContentEquipos">
+          <h1>Pintura</h1>
+          <ul>
+            <li><p>Brocha</p></li>
+            <li><p>Pistola</p></li>
+            <li><p>Rodillo</p></li>
+          </ul>
 
-          </div>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Pinzas varias</h1>
+          <ul>
+            <li><p>Pinza corte</p></li>
+            <li><p>Pinza fijación</p></li>
+            <li><p>Pinza soldar</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <img src="../../assets/images/herramientas.jpg" alt="">
+        </div>
+
+      </div>
+      
+      <!--CATEGORIA ACCESORIOS-->
+      <div class="flex-containerContenidoAccesorios" *ngIf="categoriaAccesorios == true">
+        <div class="flex-itemContentEquipos">
+          <h1>Equipo bombeo</h1>
+          <ul>
+            <li><p>Caja control</p></li>
+            <li><p>Control automatico</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+            <h1>Combos</h1>
+            <ul>
+              <li><p>Kit Perforación</p></li>
+              <li><p>Kit desbaste</p></li>
+              <li><p>Kit Neumatico</p></li>
+              <li><p>Kit Pintor</p></li>
+            </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Equipo neumático</h1>
+          <ul>
+            <li><p>Manguera</p></li>
+            <li><p>Regulador</p></li>
+            <li><p>Soplete</p></li>
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Herramienta corte</h1>
+          <ul>
+            <li><p>Cuchilla</p></li>
+            <li><p>Disco</p></li>
+            <li><p>Sierra</p></li>
+            
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Herramienta desbaste</h1>
+          <ul> 
+            <li><p>Carda</p></li>
+            <li><p>Cepillo</p></li>
+            <li><p>Disco</p></li>
+            <li><p>Piedra</p></li>
+            <li><p>Respaldo </p></li>
+            
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Herramienta electrica</h1>
+          <ul>
+            <li><p>Batería</p></li>
+            <li><p>Broca</p></li>
+            <li><p>Broquero</p></li>
+            <li><p>Filtro separador</p></li>
+
+            
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+            <h1>Herramienta fijación</h1>
+            <ul>
+              <li><p>Grapa</p></li>
+             
+              
+            </ul>            
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Herramienta perforación </h1>
+          <ul>
+            <li><p>Adaptador</p></li>
+            <li><p>Barrena</p></li>
+            <li><p>Broca</p></li>
+            <li><p>Cincel</p></li>
+            <li><p>Diablo</p></li>
+            <li><p>Portadado</p></li>
+            <li><p>Punta</p></li>
+          </ul>
+        </div>
+
+        <div class="flex-itemContentEquipos">
+          <h1>Jardinería</h1>
+          <ul>
+            <li><p>Manguera</p></li>
+            
+          </ul>
+
+        </div>
+        <div class="flex-itemContentEquipos">
+          <h1>Pintura</h1>
+          <ul>
+            <li><p>Aereosol</p></li>
+            
+          </ul>
+        </div>
+
+        <div class="flex-itemContentEquipos">
+          <h1>Resguardo y acomodo</h1>
+          <ul>
+            <li><p>Caja herramienta</p></li>
+            <li><p>Maleta</p></li>
+            <li><p>Mochila</p></li>
+            <li><p>PortaHerramienta</p></li>
+            
+          </ul>
+        </div>
+        <div class="flex-itemContentEquipos">
+          <img src="../../assets/images/accesorios.jpg" alt="">
+        </div>
+
+      </div>
+      <div class="flex-containerContenidoEquipos" *ngIf="categoriaMotores == true">
+        <div class="flex-itemContentEquipos">
+          <h1>Motores</h1>
+        
+
+        </div>
+
+        <div class="flex-itemContentEquipos">
+          <img src="../../assets/images/motores.jpg" alt="">
+        
 
         </div>
 
       </div>
+
     </div>
+  </div>
+</div>
+
+<!--================Especialidades=======================Especialidades===================Especialidades===============================Especialidades=============-->
+<!--======================Especialidades========================Especialidades=====================Especialidades=====================Especialidades==============-->
+<div id="menuEspecialidades" #menuEspecialidades class="categorias-info" (mouseleave) = "leaveelement('especialidades')">
+<div class="flex-containerCategorias">
+  <div class="flex-itemsCategorias">
+    <ul>
+        <li><a type="button" (click) = "selectCategory('equipos')">Albañilería</a></li>
+        <li><a type="button" (click) = "selectCategory('herramientas')">Carpintería</a></li>
+        <li><a type="button" (click) = "selectCategory('accesorios')">Electricidad</a></li>
+        <li><a type="button" (click) = "selectCategory('motores')">Herrería</a></li>
+
+        <li><a type="button" (click) = "selectCategory('equipos')">Mecanica</a></li>
+        <li><a type="button" (click) = "selectCategory('herramientas')">Pintura</a></li>
+        <li><a type="button" (click) = "selectCategory('accesorios')">Plomería</a></li>
+        <li><a type="button" (click) = "selectCategory('motores')">Aluminería</a></li>
+
+        <li><a type="button" (click) = "selectCategory('equipos')">Hojalatería</a></li>
+        <li><a type="button" (click) = "selectCategory('herramientas')">Jardinería</a></li>
+        <li><a type="button" (click) = "selectCategory('accesorios')">Otros</a></li>
+        
+    </ul>
+  </div>
+  <div class="flex-itemsCategorias">
+    <div class="flex-containerContenidoCategorias" *ngIf="categoriaEquipos == true">
+      <div class="flex-itemContentCategorias">
+        <h1>bombeo</h1>
+        <ul>
+          <li><p>Bomba</p></li>
+          <li><p>Motobomba</p></li>
+          <li><p>Presurisador</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+          <h1>Compresión</h1>
+          <ul>
+            <li><p>Compresor</p></li>
+          </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Corte</h1>
+        <ul>
+          <li><p>Cortasetos</p></li>
+          <li><p>Desbrozadora</p></li>
+          <li><p>Desmalezadora</p></li>
+          <li><p>Machete</p></li>
+          <li><p>Motosierra</p></li>
+          <li><p>Podadora</p></li>
+          <li><p>Tronzadora</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+        <img src="../../assets/images/equipos.jpg" alt="">
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Fumigación</h1>
+        <ul>
+          <li><p>Aspersora</p></li>
+          <li><p>Fumigador</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Generadores de energia</h1>
+        <ul> 
+          <li>Generador</li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Limpieza</h1>
+        <ul>
+          <li><p>Hidrolavadora</p></li>
+          <li><p>Aspiradora</p></li>
+          <li><p>Extractor</p></li>
+          <li><p>Sopladora</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+          <h1>Medición</h1>
+          <ul>
+            <li><p>Balanza</p></li>
+            <li><p>Bascula</p></li>
+            <li><p>Laser</p></li>
+            <li><p>Probador de voltaje</p></li>
+          </ul>            
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Seguridad</h1>
+        <ul><li><p>Careta</p></li></ul>
+      </div>
+
+      <div class="flex-itemContentCategorias">
+        <h1>Soldar</h1>
+        <ul>
+          <li><p>Soldadora</p></li>
+          <li><p>Soldadura</p></li>
+        </ul>
+
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Ventilación</h1>
+        <ul>
+          <li><p>Ventilador</p></li>
+        </ul>
+      </div>
+      
+
+    </div>
+    <!--AQUI EMPIEZA EL DE HERRAMIENTAS-->
+    <div class="flex-containerContenidoEquipos" *ngIf="categoriaHerramientas == true">
+      <div class="flex-itemContentEquipos">
+        <h1>Calor</h1>
+        <ul>
+          <li><p>Cautin</p></li>
+          <li><p>Pistola</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+          <h1>Combos</h1>
+          <ul>
+            <li><p>Kit Mecanico</p></li>
+            <li><p>Kit Perforación</p></li>
+            <li><p>Kit Varios</p></li>
+            <li><p>Kit Fijación</p></li>
+          </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Corte</h1>
+        <ul>
+          <li><p>Arco segueta</p></li>
+          <li><p>Azadon</p></li>
+          <li><p>Corta pernos</p></li>
+          <li><p>Cortadora</p></li>
+          <li><p>Cortatubos</p></li>
+          <li><p>Cortavidrios</p></li>
+          <li><p>Cuchilla curva</p></li>
+          <li><p>Formon</p></li>
+          <li><p>Hacha</p></li>
+          <li><p>Navaja</p></li>
+          <li><p>Cerrucho</p></li>
+          <li><p>Sierra</p></li>
+          <li><p>Tijera</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Desbaste</h1>
+        <ul>
+          <li><p>Cepillo</p></li>
+          <li><p>Esmeriladora</p></li>
+          <li><p>Guadaña</p></li>
+          <li><p>Lijadora</p></li>
+          <li><p>Lima</p></li>
+          <li><p>Rebajadora</p></li>
+          <li><p>Recortadora</p></li>
+          <li><p>Rectificador</p></li>
+          <li><p>Router</p></li>
+          <li><p>Trompo</p></li>
+          <li><p>Pulidora</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Fijación</h1>
+        <ul> 
+          <li><p>Atornillador</p></li>
+          <li><p>Desarmador</p></li>
+          <li><p>Engrapadora</p></li>
+          <li><p>Llave</p></li>
+          <li><p>Llave </p></li>
+          <li><p>Martillo</p></li>
+          <li><p>Engrapadora</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Inyección</h1>
+        <ul>
+          <li><p>Inyector</p></li>
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+          <h1>Medición</h1>
+          <ul>
+            <li><p>Cinta</p></li>
+            <li><p>Escuadra</p></li>
+            <li><p>Flexometro</p></li>
+            <li><p>Multimetro</p></li>
+            <li><p>Nivel</p></li>
+            
+          </ul>            
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Perforación </h1>
+        <ul>
+          <li><p>Atornillador</p></li>
+          <li><p>Avellanador</p></li>
+          <li><p>Berbiqui</p></li>
+          <li><p>Llave impacto</p></li>
+          <li><p>Mandril</p></li>
+          <li><p>Martillo</p></li>
+          <li><p>Rotomartillo</p></li>
+          <li><p>Taladro</p></li>
+        </ul>
+      </div>
+
+      <div class="flex-itemContentEquipos">
+        <h1>Pintura</h1>
+        <ul>
+          <li><p>Brocha</p></li>
+          <li><p>Pistola</p></li>
+          <li><p>Rodillo</p></li>
+        </ul>
+
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Pinzas varias</h1>
+        <ul>
+          <li><p>Pinza corte</p></li>
+          <li><p>Pinza fijación</p></li>
+          <li><p>Pinza soldar</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <img src="../../assets/images/herramientas.jpg" alt="">
+      </div>
+
+    </div>
+    
+    <!--CATEGORIA ACCESORIOS-->
+    <div class="flex-containerContenidoAccesorios" *ngIf="categoriaAccesorios == true">
+      <div class="flex-itemContentEquipos">
+        <h1>Equipo bombeo</h1>
+        <ul>
+          <li><p>Caja control</p></li>
+          <li><p>Control automatico</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+          <h1>Combos</h1>
+          <ul>
+            <li><p>Kit Perforación</p></li>
+            <li><p>Kit desbaste</p></li>
+            <li><p>Kit Neumatico</p></li>
+            <li><p>Kit Pintor</p></li>
+          </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Equipo neumático</h1>
+        <ul>
+          <li><p>Manguera</p></li>
+          <li><p>Regulador</p></li>
+          <li><p>Soplete</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Herramienta corte</h1>
+        <ul>
+          <li><p>Cuchilla</p></li>
+          <li><p>Disco</p></li>
+          <li><p>Sierra</p></li>
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Herramienta desbaste</h1>
+        <ul> 
+          <li><p>Carda</p></li>
+          <li><p>Cepillo</p></li>
+          <li><p>Disco</p></li>
+          <li><p>Piedra</p></li>
+          <li><p>Respaldo </p></li>
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Herramienta electrica</h1>
+        <ul>
+          <li><p>Batería</p></li>
+          <li><p>Broca</p></li>
+          <li><p>Broquero</p></li>
+          <li><p>Filtro separador</p></li>
+
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+          <h1>Herramienta fijación</h1>
+          <ul>
+            <li><p>Grapa</p></li>
+           
+            
+          </ul>            
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Herramienta perforación </h1>
+        <ul>
+          <li><p>Adaptador</p></li>
+          <li><p>Barrena</p></li>
+          <li><p>Broca</p></li>
+          <li><p>Cincel</p></li>
+          <li><p>Diablo</p></li>
+          <li><p>Portadado</p></li>
+          <li><p>Punta</p></li>
+        </ul>
+      </div>
+
+      <div class="flex-itemContentEquipos">
+        <h1>Jardinería</h1>
+        <ul>
+          <li><p>Manguera</p></li>
+          
+        </ul>
+
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Pintura</h1>
+        <ul>
+          <li><p>Aereosol</p></li>
+          
+        </ul>
+      </div>
+
+      <div class="flex-itemContentEquipos">
+        <h1>Resguardo y acomodo</h1>
+        <ul>
+          <li><p>Caja herramienta</p></li>
+          <li><p>Maleta</p></li>
+          <li><p>Mochila</p></li>
+          <li><p>PortaHerramienta</p></li>
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <img src="../../assets/images/accesorios.jpg" alt="">
+      </div>
+
+    </div>
+    <div class="flex-containerContenidoEquipos" *ngIf="categoriaMotores == true">
+      <div class="flex-itemContentEquipos">
+        <h1>Motores</h1>
+      
+
+      </div>
+
+      <div class="flex-itemContentEquipos">
+        <img src="../../assets/images/motores.jpg" alt="">
+      
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
 </div>
 
 
+
+
+<!--================Ubicacion=======================Ubicacion===================Ubicacion===============================Ubicacion=============-->
+<!--======================Ubicacion========================Ubicacion=====================Ubicacion=====================Ubicacion==============-->
+<div id="menuUbicacion" #menuUbicacion class="categorias-info" (mouseleave) = "leaveelement('ubicaciones')">
+<div class="flex-containerCategorias">
+  <div class="flex-itemsCategorias">
+    <ul>
+        <li><a type="button" (click) = "selectCategory('equipos')">Hogar</a></li>
+        <li><a type="button" (click) = "selectCategory('herramientas')">Jardín</a></li>
+        <li><a type="button" (click) = "selectCategory('accesorios')">Agricultura</a></li>
+        <li><a type="button" (click) = "selectCategory('motores')">Negocio</a></li>
+
+        <li><a type="button" (click) = "selectCategory('equipos')">Industría</a></li>
+        
+        
+    </ul>
+  </div>
+  <div class="flex-itemsCategorias">
+    <div class="flex-containerContenidoCategorias" *ngIf="categoriaEquipos == true">
+      <div class="flex-itemContentCategorias">
+        <h1>bombeo</h1>
+        <ul>
+          <li><p>Bomba</p></li>
+          <li><p>Motobomba</p></li>
+          <li><p>Presurisador</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+          <h1>Compresión</h1>
+          <ul>
+            <li><p>Compresor</p></li>
+          </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Corte</h1>
+        <ul>
+          <li><p>Cortasetos</p></li>
+          <li><p>Desbrozadora</p></li>
+          <li><p>Desmalezadora</p></li>
+          <li><p>Machete</p></li>
+          <li><p>Motosierra</p></li>
+          <li><p>Podadora</p></li>
+          <li><p>Tronzadora</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+        <img src="../../assets/images/equipos.jpg" alt="">
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Fumigación</h1>
+        <ul>
+          <li><p>Aspersora</p></li>
+          <li><p>Fumigador</p></li>
+        </ul>
+      </div>
+      
+      <div class="flex-itemContentCategorias">
+        <h1>Generadores de energia</h1>
+        <ul> 
+          <li>Generador</li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Limpieza</h1>
+        <ul>
+          <li><p>Hidrolavadora</p></li>
+          <li><p>Aspiradora</p></li>
+          <li><p>Extractor</p></li>
+          <li><p>Sopladora</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentCategorias">
+          <h1>Medición</h1>
+          <ul>
+            <li><p>Balanza</p></li>
+            <li><p>Bascula</p></li>
+            <li><p>Laser</p></li>
+            <li><p>Probador de voltaje</p></li>
+          </ul>            
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Seguridad</h1>
+        <ul><li><p>Careta</p></li></ul>
+      </div>
+
+      <div class="flex-itemContentCategorias">
+        <h1>Soldar</h1>
+        <ul>
+          <li><p>Soldadora</p></li>
+          <li><p>Soldadura</p></li>
+        </ul>
+
+      </div>
+      <div class="flex-itemContentCategorias">
+        <h1>Ventilación</h1>
+        <ul>
+          <li><p>Ventilador</p></li>
+        </ul>
+      </div>
+     
+
+    </div>
+    <!--AQUI EMPIEZA EL DE HERRAMIENTAS-->
+    <div class="flex-containerContenidoEquipos" *ngIf="categoriaHerramientas == true">
+      <div class="flex-itemContentEquipos">
+        <h1>Calor</h1>
+        <ul>
+          <li><p>Cautin</p></li>
+          <li><p>Pistola</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+          <h1>Combos</h1>
+          <ul>
+            <li><p>Kit Mecanico</p></li>
+            <li><p>Kit Perforación</p></li>
+            <li><p>Kit Varios</p></li>
+            <li><p>Kit Fijación</p></li>
+          </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Corte</h1>
+        <ul>
+          <li><p>Arco segueta</p></li>
+          <li><p>Azadon</p></li>
+          <li><p>Corta pernos</p></li>
+          <li><p>Cortadora</p></li>
+          <li><p>Cortatubos</p></li>
+          <li><p>Cortavidrios</p></li>
+          <li><p>Cuchilla curva</p></li>
+          <li><p>Formon</p></li>
+          <li><p>Hacha</p></li>
+          <li><p>Navaja</p></li>
+          <li><p>Cerrucho</p></li>
+          <li><p>Sierra</p></li>
+          <li><p>Tijera</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Desbaste</h1>
+        <ul>
+          <li><p>Cepillo</p></li>
+          <li><p>Esmeriladora</p></li>
+          <li><p>Guadaña</p></li>
+          <li><p>Lijadora</p></li>
+          <li><p>Lima</p></li>
+          <li><p>Rebajadora</p></li>
+          <li><p>Recortadora</p></li>
+          <li><p>Rectificador</p></li>
+          <li><p>Router</p></li>
+          <li><p>Trompo</p></li>
+          <li><p>Pulidora</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Fijación</h1>
+        <ul> 
+          <li><p>Atornillador</p></li>
+          <li><p>Desarmador</p></li>
+          <li><p>Engrapadora</p></li>
+          <li><p>Llave</p></li>
+          <li><p>Llave </p></li>
+          <li><p>Martillo</p></li>
+          <li><p>Engrapadora</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Inyección</h1>
+        <ul>
+          <li><p>Inyector</p></li>
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+          <h1>Medición</h1>
+          <ul>
+            <li><p>Cinta</p></li>
+            <li><p>Escuadra</p></li>
+            <li><p>Flexometro</p></li>
+            <li><p>Multimetro</p></li>
+            <li><p>Nivel</p></li>
+            
+          </ul>            
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Perforación </h1>
+        <ul>
+          <li><p>Atornillador</p></li>
+          <li><p>Avellanador</p></li>
+          <li><p>Berbiqui</p></li>
+          <li><p>Llave impacto</p></li>
+          <li><p>Mandril</p></li>
+          <li><p>Martillo</p></li>
+          <li><p>Rotomartillo</p></li>
+          <li><p>Taladro</p></li>
+        </ul>
+      </div>
+
+      <div class="flex-itemContentEquipos">
+        <h1>Pintura</h1>
+        <ul>
+          <li><p>Brocha</p></li>
+          <li><p>Pistola</p></li>
+          <li><p>Rodillo</p></li>
+        </ul>
+
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Pinzas varias</h1>
+        <ul>
+          <li><p>Pinza corte</p></li>
+          <li><p>Pinza fijación</p></li>
+          <li><p>Pinza soldar</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <img src="../../assets/images/herramientas.jpg" alt="">
+      </div>
+
+    </div>
+    
+    <!--CATEGORIA ACCESORIOS-->
+    <div class="flex-containerContenidoAccesorios" *ngIf="categoriaAccesorios == true">
+      <div class="flex-itemContentEquipos">
+        <h1>Equipo bombeo</h1>
+        <ul>
+          <li><p>Caja control</p></li>
+          <li><p>Control automatico</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+          <h1>Combos</h1>
+          <ul>
+            <li><p>Kit Perforación</p></li>
+            <li><p>Kit desbaste</p></li>
+            <li><p>Kit Neumatico</p></li>
+            <li><p>Kit Pintor</p></li>
+          </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Equipo neumático</h1>
+        <ul>
+          <li><p>Manguera</p></li>
+          <li><p>Regulador</p></li>
+          <li><p>Soplete</p></li>
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Herramienta corte</h1>
+        <ul>
+          <li><p>Cuchilla</p></li>
+          <li><p>Disco</p></li>
+          <li><p>Sierra</p></li>
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Herramienta desbaste</h1>
+        <ul> 
+          <li><p>Carda</p></li>
+          <li><p>Cepillo</p></li>
+          <li><p>Disco</p></li>
+          <li><p>Piedra</p></li>
+          <li><p>Respaldo </p></li>
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Herramienta electrica</h1>
+        <ul>
+          <li><p>Batería</p></li>
+          <li><p>Broca</p></li>
+          <li><p>Broquero</p></li>
+          <li><p>Filtro separador</p></li>
+
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+          <h1>Herramienta fijación</h1>
+          <ul>
+            <li><p>Grapa</p></li>
+           
+            
+          </ul>            
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Herramienta perforación </h1>
+        <ul>
+          <li><p>Adaptador</p></li>
+          <li><p>Barrena</p></li>
+          <li><p>Broca</p></li>
+          <li><p>Cincel</p></li>
+          <li><p>Diablo</p></li>
+          <li><p>Portadado</p></li>
+          <li><p>Punta</p></li>
+        </ul>
+      </div>
+
+      <div class="flex-itemContentEquipos">
+        <h1>Jardinería</h1>
+        <ul>
+          <li><p>Manguera</p></li>
+          
+        </ul>
+
+      </div>
+      <div class="flex-itemContentEquipos">
+        <h1>Pintura</h1>
+        <ul>
+          <li><p>Aereosol</p></li>
+          
+        </ul>
+      </div>
+
+      <div class="flex-itemContentEquipos">
+        <h1>Resguardo y acomodo</h1>
+        <ul>
+          <li><p>Caja herramienta</p></li>
+          <li><p>Maleta</p></li>
+          <li><p>Mochila</p></li>
+          <li><p>PortaHerramienta</p></li>
+          
+        </ul>
+      </div>
+      <div class="flex-itemContentEquipos">
+        <img src="../../assets/images/accesorios.jpg" alt="">
+      </div>
+
+    </div>
+    <div class="flex-containerContenidoEquipos" *ngIf="categoriaMotores == true">
+      <div class="flex-itemContentEquipos">
+        <h1>Motores</h1>
+      
+
+      </div>
+
+      <div class="flex-itemContentEquipos">
+        <img src="../../assets/images/motores.jpg" alt="">
+      
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!--============Otros===================Otroas===================Otros==============================================================-->
+<!--==================Otros=======================Otros=============================Otros=============================================-->
+
+<div id="menuOtros" #menuOtros  class="categorias-info" (mouseleave) = "leaveelement('otros')">
+<div class="flex-containerOtrasOpciones">
+  <div class="flex-itemOtrasOpciones">
+    <ul>
+      <li><a href="">Tienda</a></li>
+      <li><a href="">Contacto</a></li>
+      <li><a href="">Preguntas Frecuentes</a></li>
+      <li><a href="">Nosotros</a></li>
+      <li><a href="">Politicas</a></li>
+      <li><a href="">Mapa del sitio</a></li>
+      <li><a href="">Ubicaciones</a></li>
+    </ul>
+  </div>
+  <div class="flex-itemOtrasOpciones">
+      <img src="../../assets//images/herramientas.jpg" alt="">
+  </div>    
+</div>
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
 <!--Navbar responsive-->
-<nav>
+<nav id="menu-movil" #menuMobile>
+  <div class="flex-container-mobile">
+    <div class="flex-item-mobile">
+      <img src="../../assets/images/powerprologo.png" alt="">
+    </div>
+    <div class="flex-item-mobile">
+      <div>
+        <input type="search" placeholder="¿Que estas buscando?"><i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="flex-item-mobile">
+      <div>
+        <button (click) = "expandMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container-opcionesMenu" #primerVistaMenu>
+    <div class="flex-itemOpMenu">
+        <a href="">Categorías</a><button (click) ="expandCategories('categorias')"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        
+        <div class="flex-cM" #opcionesCategorias>
+          <div class="flex-iC" (click) = "expandSubcategorias('equipos')">
+            <p>Equipos <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+          </div>
+          <div class="flex-iC" (click) = "expandSubcategorias('herramientas')">
+            <p>Herramientas <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+          </div>
+          <div class="flex-iC" (click) = "expandSubcategorias('accesorios')">
+            <p>Accesorios <i class="fa fa-angle-right" aria-hidden="true"></i></p> 
+          </div>
+          <div class="flex-iC" (click) = "expandSubcategorias('motores')">
+            <p>Motores <i class="fa fa-angle-right" aria-hidden="true"></i></p>  
+          </div>
+        </div>
+        
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href="">Ubicación</a><button (click)="expandCategories('ubicaciones')"><i class="fa fa-plus" aria-hidden="true"></i></button>
+      <div class="flex-cM" #opcionesUbicaciones>
+        <div class="flex-iC">
+          <p>Hogar <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="flex-iC">
+          <p>Jardín <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="flex-iC">
+          <p>Agricultura <i class="fa fa-angle-right" aria-hidden="true"></i></p> 
+        </div>
+        <div class="flex-iC">
+          <p>Negocio <i class="fa fa-angle-right" aria-hidden="true"></i></p>  
+        </div>
+        <div class="flex-iC">
+          <p>Industria <i class="fa fa-angle-right" aria-hidden="true"></i></p>  
+        </div>
+      </div>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href="">Especialidades</a><button (click)="expandCategories('especialidades')"><i class="fa fa-plus" aria-hidden="true"></i></button>
+      <div class="flex-cM" #opcionesEspecialidades>
+        <div class="flex-iC">
+          <p>Albañilería <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="flex-iC">
+          <p>Carpintería <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="flex-iC">
+          <p>Electricidad <i class="fa fa-angle-right" aria-hidden="true"></i></p> 
+        </div>
+        <div class="flex-iC">
+          <p>Herrería <i class="fa fa-angle-right" aria-hidden="true"></i></p>  
+        </div>
+        <div class="flex-iC">
+          <p>Mecanica <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="flex-iC">
+          <p>Pintura <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="flex-iC">
+          <p>Plomería <i class="fa fa-angle-right" aria-hidden="true"></i></p> 
+        </div>
+        <div class="flex-iC">
+          <p>Aluminería <i class="fa fa-angle-right" aria-hidden="true"></i></p>  
+        </div>
+        <div class="flex-iC">
+          <p>Hojalatería <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+        </div>
+        <div class="flex-iC">
+          <p>Plomería <i class="fa fa-angle-right" aria-hidden="true"></i></p> 
+        </div>
+        <div class="flex-iC">
+          <p>Jardinería <i class="fa fa-angle-right" aria-hidden="true"></i></p>  
+        </div>
+      </div>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href=""><i class="fa fa-user" aria-hidden="true"></i> Mi perfil</a>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mi carrito</a>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href=""> <i class="fa fa-heart" aria-hidden="true"></i> Mi wishlist</a>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href=""> <i class="fa fa-list-alt" aria-hidden="true"></i> Mi historial de compras</a>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Ubicaciones</a>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href="">Tienda</a>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href="">Contacto</a>
+      </div>
+      <div class="flex-itemOpMenu">
+        <a href="">Preguntas frecuentes</a>
+      </div>
+    <div class="flex-itemOpMenu">
+      <a href="">Nosotros</a>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href="">Politicas</a>
+    </div>
+    <div class="flex-itemOpMenu">
+      <a href="">Mapa del sitio</a>
+    </div>
+  </div>
+  
+  <div style="position: absolute; right: 10%; z-index: 999">
+    <div class="contenedorPrueba" #contenedorPrueba>
+      <div class="backButton" (click) = "minimizarSubMenu()">
+        <p><i class="fa fa-chevron-left" aria-hidden="true"></i>   Regresar al menú</p>
+      </div>
+      <div class="flex-containerSubs" *ngIf = "subcatEquipos == true">
+        <div class="flex-itemsSubs">
+          <p>Bombeo</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Compresión</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Corte</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Fumigación</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Generador de energía</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Medición</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Seguridad</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Soldar</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Ventilación</p>
+        </div>
+      </div>
+      <!--Subcat herramientas-->
+      <div class="flex-containerSubs" *ngIf = "subcatHerramientas == true">
+        <div class="flex-itemsSubs">
+          <p>Calor</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Combos</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Corte</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Desbaste</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Fijación</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Inyección</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Medición</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Perforación</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Pintura</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Pinzas varias</p>
+        </div>
+      </div>
+
+      <!--Accesorios-->
+
+      <div class="flex-containerSubs" *ngIf = "subcatAccesorios == true">
+        <div class="flex-itemsSubs">
+          <p>Equipo bombeo</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Combos</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Equipo neumatico</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Herramientas de corte</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Herramientas de desbaste</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Herramientas electricas</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Herramientas de Fijación</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Herramientas de perforación</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Jardinería</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Pintura</p>
+        </div>
+        <div class="flex-itemsSubs">
+          <p>Resguardo y acomodo</p>
+        </div>
+      </div>
+
+
+      <div class="flex-containerSubs" *ngIf = "subcatMotores == true">
+        <div class="flex-itemsSubs">
+          <p>Motores</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 </nav>
