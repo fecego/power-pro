@@ -1137,14 +1137,18 @@
 
 <!--Navbar responsive-->
 <nav id="menu-movil" #menuMobile>
+  <div class="closeButton" #closeButton (click) = "closeMenus()">
+    <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+  </div>
   <div class="flex-container-mobile">
-    <div class="flex-item-mobile">
-      <img src="../../assets/images/powerprologo.png" alt="">
-    </div>
+    
     <div class="flex-item-mobile">
       <div>
-        <input type="search" placeholder="¿Que estas buscando?"><i class="fa fa-search" aria-hidden="true"></i>
+        <input type="search" placeholder="¿Que estas buscando?"><i (click)="expandSearch()" class="fa fa-search" aria-hidden="true"></i>
       </div>
+    </div>
+    <div class="flex-item-mobile">
+      <img src="../../assets/images/powerprologo.png" alt="">
     </div>
     <div class="flex-item-mobile">
       <div>
@@ -1265,7 +1269,7 @@
     </div>
   </div>
   
-  <div style="position: absolute; right: 10%; z-index: 999">
+  <div class="contenedorSegundaVista">
     <div class="contenedorPrueba" #contenedorPrueba>
       <div class="backButton" (click) = "minimizarSubMenu()">
         <p><i class="fa fa-chevron-left" aria-hidden="true"></i>   Regresar al menú</p>
@@ -1380,6 +1384,39 @@
 
     </div>
 
+  </div>
+
+  <div class="contenedorBusqueda" #contenedorBusqueda>
+    <div class="searchContainer">
+      <div class="flex-searchItem">
+        <label for="busqueda">¿Que estas buscando?</label>
+        <input id="busqueda" type="search">
+      </div>
+      <div class="flex-searchItem">
+        <div class="flex-containerItemsSearch">
+          <div class="itemSearch">
+            <h1>Here goes a result</h1>
+          </div>
+          <div class="itemSearch">
+            <h1>Here goes a result</h1>
+          </div>
+          <div class="itemSearch">
+            <h1>Here goes a result</h1>
+          </div>
+          <div class="itemSearch">
+            <h1>Here goes a result</h1>
+          </div>
+          <div class="itemSearch">
+            <h1>Here goes a result</h1>
+          </div>
+          <div class="itemSearch">
+            <h1>Here goes a result</h1>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </nav>

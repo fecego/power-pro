@@ -16,6 +16,8 @@ export class HeaderComponent implements OnInit {
   @ViewChild("opcionesUbicaciones") opcUbicacion:ElementRef;
   @ViewChild("opcionesEspecialidades") opcEspecialidad: ElementRef;
   @ViewChild("contenedorPrueba") contenedorP: ElementRef;
+  @ViewChild("contenedorBusqueda") contedorSearch: ElementRef;
+  @ViewChild("closeButton") closeB:ElementRef;
 
 
   public categoriaEquipos = false;
@@ -58,6 +60,21 @@ export class HeaderComponent implements OnInit {
         this.renderer.removeClass(this.otrosM.nativeElement, "clasePrueba");
       break;
     }
+  }
+
+  expandSearch(){
+
+    let elementBusquedaWith = this.contedorSearch.nativeElement.offsetWidth;
+    if(elementBusquedaWith == 0){
+      this.renderer.addClass(this.contedorSearch.nativeElement, "expandContenedorBusqueda");
+      this.renderer.removeClass(this.primerVista.nativeElement, "expandfirst");
+      this.renderer.removeClass(this.contenedorP.nativeElement, "contenedorPruebaExpand");
+      this.renderer.addClass(this.closeB.nativeElement, "closeButtonAppear");
+    }else{
+      this.renderer.removeClass(this.contedorSearch.nativeElement, "expandContenedorBusqueda");
+      this.renderer.removeClass(this.closeB.nativeElement, "closeButtonAppear");
+    }
+    
   }
 
 
@@ -147,11 +164,18 @@ export class HeaderComponent implements OnInit {
     let widthElement = this.primerVista.nativeElement.offsetWidth;
     if(widthElement == 0){
       this.renderer.addClass(this.primerVista.nativeElement, "expandfirst");
+      this.renderer.addClass(this.closeB.nativeElement, "closeButtonAppear");
+      this.renderer.removeClass(this.contedorSearch.nativeElement, "expandContenedorBusqueda");
     }else{
       this.renderer.removeClass(this.primerVista.nativeElement, "expandfirst");
+      this.renderer.removeClass(this.contenedorP.nativeElement, "contenedorPruebaExpand");
+      this.renderer.removeClass(this.contedorSearch.nativeElement, "expandContenedorBusqueda");
+      this.renderer.removeClass(this.closeB.nativeElement, "closeButtonAppear");
     }
     
   }
+  
+  
 
   expandCategories(dato){
     switch(dato){
@@ -183,6 +207,14 @@ export class HeaderComponent implements OnInit {
     }
     
   } 
+
+  closeMenus(){
+    this.renderer.removeClass(this.closeB.nativeElement, "closeButtonAppear");
+    this.renderer.removeClass(this.primerVista.nativeElement, "expandfirst");
+    this.renderer.removeClass(this.contenedorP.nativeElement, "contenedorPruebaExpand");
+    this.renderer.removeClass(this.contedorSearch.nativeElement, "expandContenedorBusqueda");
+
+  }
 
 
   selectMenu(valor:string){
