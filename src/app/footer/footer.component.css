@@ -142,3 +142,48 @@
     color: #fff;
 }
 
+@media screen and (max-width: 640px) and (min-width: 568px){
+
+
+}
+@media only screen and (max-width: 390px) and (min-width: 321px){
+    .flex-container{
+        flex-direction: column;
+
+    }
+
+    .flex-item{
+        width: 100%;
+    }
+
+    .flex-item ul li{
+        line-height: 0.6em;
+    }
+
+    .flex-container2{
+        flex-direction: column;
+        background:#4B3663;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .flex-item2{
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .flex-item2:nth-child(2){
+        
+        background: #4B3663;
+    }
+
+    .flex-item2:nth-child(2) img{
+        margin-left: 10px;
+    }
+
+}
+
+
+
