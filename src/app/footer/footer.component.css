@@ -1,0 +1,189 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    background: #4B3663;
+}
+
+.flex-container h1{
+    font-weight: bold;
+    
+}
+
+
+.flex-item{
+    width: 25%;
+}
+
+.flex-item h1{
+    color: #fff;
+    font-size: 18px;
+}
+
+.flex-item ul li{
+    list-style: none;
+    line-height: 0.4px;
+    box-sizing: border-box;    
+}
+
+.flex-item ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-item ul li p{
+    color: #fff;
+}
+
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: #4B3663;
+}
+
+.flex-item2{    
+    width: 33.3%;
+    text-align: center;
+}
+
+.flex-item2 p{
+    color: #fff;
+    font-size: 14px;
+}
+
+
+.flex-item2:first-child{
+    padding: 40px;
+}
+
+.flex-item2 h1{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.flex-item2 div{
+    display: inline-block;
+}
+
+.flex-item2 i{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.flex-logo{
+    width: 190px;
+    height: 180px;
+}
+
+.flex-logo img{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    align-self: center;
+}
+
+
+
+.flex-container3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+    background: #4B3663;
+}
+
+.flex-item3{
+    width: 25%;
+}
+
+.flex-item3 h1{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+.flex-container4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #3f2d53;
+    padding: 10px;
+}   
+
+.flex-item4{
+    flex: 1;
+    text-align: center;
+}
+
+.flex-item4 p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    
+}
+
+.flex-item4 h1{
+    font-size: 14px;
+    color: #fff;
+}
+
+@media screen and (max-width: 640px) and (min-width: 568px){
+
+
+}
+@media only screen and (max-width: 390px) and (min-width: 321px){
+    .flex-container{
+        flex-direction: column;
+
+    }
+
+    .flex-item{
+        width: 100%;
+    }
+
+    .flex-item ul li{
+        line-height: 0.6em;
+    }
+
+    .flex-container2{
+        flex-direction: column;
+        background:#4B3663;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .flex-item2{
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .flex-item2:nth-child(2){
+        
+        background: #4B3663;
+    }
+
+    .flex-item2:nth-child(2) img{
+        margin-left: 10px;
+    }
+
+}
+
+
+
