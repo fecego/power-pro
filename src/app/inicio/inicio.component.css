@@ -34,6 +34,11 @@
   }
 
 
+  .swiper {
+    height: 400px;
+    width: 600px;
+  }
+
 .publicity-four{
     background: cyan; 
     width: 100%; 
