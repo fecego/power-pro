@@ -1,7 +1,146 @@
+.precios{
+   
+}
+
+
+
+.categoriaFiltros p{
+    display: block;
+    padding: 20px;
+}
+
+
+.flex-contOptions button{
+    background: #F2F2F2;
+    margin: 3px;
+    display: block;
+    border: none;
+    padding: 10px;
+}
+
+.positionOptions{
+    position: absolute;
+    top: -20%;
+    left: 80%;
+    transition: 0.5s ease-in-out;
+    height: auto;
+    width: 100%;
+    
+    opacity: 0;
+
+}
+
+
+.flex-itemOption{
+    flex: 1;
+    margin: 1px;
+}
+
+
+
+
+
+
+.preciosdesc p{
+    display: inline;
+    line-height: 1em;
+    
+}
+
+.preciosdesc p:first-child{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.preciosdesc p:nth-child(2){
+    color: red;
+    font-size: 300px;
+    margin-left: 10px;
+}
+
+.precios p{
+    display: inline;
+    
+}
+
+
+
+.precios p:nth-child(1){
+    font-size: 20px;
+    color: red;
+}
+
+
+
+
+.generalInfoProduct{
+    background: green;
+    height: 100%;
+    display: block;
+    position: absolute;
+    line-height: 1em;
+}
+
+
+.generalInfoProduct i{
+    color:#FFBF00;
+}
+
+.generalInfoProduct p:last-child{
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.displayOptions{
+    background: #fff;
+    z-index: 9999;
+    position: absolute;
+    height: auto;
+    display: none;
+    transition: 1s ease-in-out;
+    width: 100%;
+    padding: 10px;
+}
+
+.displayOptions div p{
+    font-size: 14px;
+}
+
+.displayOptions button{
+    display: inline;
+    margin: auto;
+    background: none;
+    border: none;
+    
+}
+
+.image-product{
+    position: relative;
+    
+}
+
+.path-content p{
+    font-size: 20px;
+    margin-left: 300px;
+}
+
+
 .title{
-    background: red;
+    
     color: #fff;
-    height: 140px;
+    height: 180px;
+}
+
+.title img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.contenedorImagen{
+    width: 100%;
+    height: 100%;
 }
 
 .title h1{
@@ -17,15 +156,16 @@
 }   
 
 .flex-item-tienda{
-    flex: 3;
+    flex: 4;
     height: 300px;
-    background: chartreuse;
+    background: #F2F2F2;
     height: auto;
 }
 
 .flex-item-tienda:first-child{
     flex: 1;
-    background: purple;
+    background: #fff;
+    padding: 10px;
 }
 
 .flex-container-tienda2{
@@ -38,19 +178,59 @@
 
 .flex-item-tienda2{
     width: 23%;
-    margin: 1px;
-
+    margin: 4px;
+    height: 420px;
 }
+
+
+
+.flex-item-tienda2:hover .displayOptions{
+    display: inline;
+    
+}
+
+.flex-item-tienda2:hover .positionOptions{
+    
+    opacity: 1;
+    transform: translate(0, 120px);
+}
+
 
 .product-t{
-    height: 300px;
+    height: 270px;
     width: 100%;
     background: #fff;
+    padding: 30px;
 }
 
-.info-t{
-    background: green;
+.product-t img{
+    width: 100%;
+    height: 100%;
 }
+
+
+.info-t{
+    background: #fff;
+    height: 138px;
+}
+
+.info-t .generalInfoProduct{
+    background: none;
+    height: 100%;
+    display: block;
+    position: absolute;
+    padding: 20px;
+}
+
+.generalInfoProduct p{
+    
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 640px) and (min-width: 568px){
     .flex-item-tienda{
