@@ -7,21 +7,265 @@
             </div>
         </div>
     </div>
+    <div class="row clasificacion-responsiva" #filtrosResponsive>
+        <div class="contenedorFiltrosResponsivos">
+            <div>
+                <div (click)="expandFiltros()">
+                    <button>Categorias </button><i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="filtrosExp" #filtrosRExpand>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Equipos</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Herramientas</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Accesorios</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Motores</label>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <div (click)="expandFiltros()">
+                    <button>Categorias </button><i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="filtrosExp" #filtrosRExpand>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Equipos</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Herramientas</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Accesorios</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Motores</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div (click)="expandFiltros()">
+                    <button>Categorias </button><i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="filtrosExp" #filtrosRExpand>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Equipos</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Herramientas</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Accesorios</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Motores</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div (click)="expandFiltros()">
+                    <button>Categorias </button><i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="filtrosExp" #filtrosRExpand>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Equipos</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Herramientas</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Accesorios</label>
+                    </div>
+                    <div>
+                        
+                        <input type="radio">
+                        <label for="radioCategoriaE">Motores</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="buttonCerrarFiltrosResponsive" (click) = "openFiltrosResponsive()">
+                <button><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+
+        </div>
+
+        
+        
+    </div>
     <div class="row path-content">
-        <p>tienda / accesorios / bombas</p>
+        <div class="flex-containerHeader">
+            <div class="flex-itemHeader">
+                <p>tienda/accesorios/zapatos</p>
+                <p>Total de productos: 659</p>
+            </div>
+            <div class="flex-itemHeader">
+                <select name="" id="">
+                    <option value="">Ordenar por nombre</option>
+                    <option value="">Ordenar por precio</option>
+                </select>
+            </div>
+            <div class="flex-itemHeader">
+               <button  (click) = "openFiltrosResponsive()" #botonResponsiveFiltros><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+        </div>
     </div>
     
 </div>
 <div class="flex-container-tienda">
     <div class="flex-item-tienda">
       <div class="categoriasFiltros">
-        <p>Categorias</p>
-        <p>Subcategoria nivel 1</p>
-        <p>Subcategoria nivel 2</p>
-        <p>Precio</p>
-        <p>Marca</p>
-        <p>Conexión</p>
+        <div>
+            <h1>Categorias <i class="fa fa-plus" aria-hidden="true"></i></h1>
+        </div>
+        <div class="filtrosRadios">
+            <div>
+                <input id="equipos" type="radio">
+                <label for="equipos"> Equipos</label>
+            </div>
+            <div>
+                <input id="herramientas" type="radio">
+                <label for="herramientas"> Herramientas</label>
+            </div>
+            <div>
+                <input id="accesorios" type="radio">
+                <label for="accesorios"> Accesorios</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Motores</label>
+            </div>
+        </div>
+        
       </div>
+
+      <div class="categoriasFiltros">
+        <div>
+            <h1>Subcategorias nivel 1 <i class="fa fa-plus" aria-hidden="true"></i></h1>
+        </div>
+        <div class="filtrosRadios">
+            <div>
+                <input id="equipos" type="radio">
+                <label for="equipos"> Bombeo</label>
+            </div>
+            <div>
+                <input id="herramientas" type="radio">
+                <label for="herramientas"> Compresión</label>
+            </div>
+            <div>
+                <input id="accesorios" type="radio">
+                <label for="accesorios"> Corte</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Fumigación</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Generadores de energia</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Limpieza</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Medición</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Seguridad</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Soldar</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Medición</label>
+            </div>
+        </div>
+        
+      </div>
+
+      <div class="categoriasFiltros">
+        <div>
+            <h1>Subcategorias nivel 2 <i class="fa fa-plus" aria-hidden="true"></i></h1>
+        </div>
+        <div class="filtrosRadios">
+            <div>
+                <input id="equipos" type="radio">
+                <label for="equipos"> Cortasetos</label>
+            </div>
+            <div>
+                <input id="herramientas" type="radio">
+                <label for="herramientas"> Desbrozadora</label>
+            </div>
+            <div>
+                <input id="accesorios" type="radio">
+                <label for="accesorios"> Desmalezadora</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Machete</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Motosierra</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Podadora</label>
+            </div>
+            <div>
+                <input id="motores" type="radio">
+                <label for="motores"> Tronzadora</label>
+            </div>
+           
+        </div>
+        
+      </div>
+
+      
     </div>
     <div class="flex-item-tienda">
         <div class="flex-container-tienda2">
@@ -77,7 +321,7 @@
                         <img src="../../assets/images/Imagenes/martillo.png" alt="">
                         <div class="positionOptions">
                             <div class="flex-contOptions">
-                                <button><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                <button><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
                                 <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
                                 <button><i class="fa fa-eye" aria-hidden="true"></i></button>
@@ -817,8 +1061,20 @@
             </div>
             
         </div>
-        <div style="text-align: center;">
-            <h1>Here goes the pagination section</h1>
+        <div>
+            <div class="pagination" >
+                <div style="margin: 0 auto;">
+                    <button><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
         </div>
     </div>
     
